@@ -17,8 +17,23 @@ public class Sieve {
 		}
 		
 		
-		System.out.println(numbers);
+		
+		boolean[] prime = new boolean[n-2];
+		
+		for(int a = 0; a < prime.length; a++) {
+			prime[a] = true;
+					
+		}
+		
+		
+		for(int a = 2; a < prime.length; a++) {
+			for(int number = a*2; number < n-2; number+=a) {
+				prime[n-2] = false;
+				
+			}
+			
+		}
 		
 	}
-
 }
+	
